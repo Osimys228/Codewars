@@ -145,4 +145,37 @@ def double_char(s):
 def distinct(seq):
   return list(dict.fromkeys(seq))
 
+#18
+
+def powers_of_two(n):
+  return [2**i for i in range(n + 1)]
+
+#19
+
+def stringy(size):
+  return "".join("1" if i % 2 == 0 else "0" for i in range(size))
+
+#20
+
+def bin_to_decimal(inp):
+  return int(inp, 2)
+
+#21
+
+def hello(name=""):
+  if not name:
+    return "Hello, World!"
+  return f"Hello, {name.capitalize()}!"
+
+#22
+
+def reverse_words(s):
+  return " ".join(s.split()[::-1])
+
+#23
+
+def battery_bars(percent):
+  bars = percent // 20
+  return f"[{'#' * bars}{'.' * (5 - bars)}]"
+
 # в конце добавлю описания скриптов

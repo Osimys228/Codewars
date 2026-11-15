@@ -87,3 +87,62 @@ a = "code"
 b = "wa.rs"
 name = a + b
 
+#10
+
+def sum_str(a: str, b: str) -> str:
+  num1 = int(a) if a else 0
+  num2 = int(b) if b else 0
+  return str(num1 + num2)
+
+#11
+
+import sys
+
+def total_bytes(obj):
+  return sys.getsizeof(obj)
+
+#12
+
+def number_to_string(num: int) -> str:
+  return str(num)
+
+#13
+
+def hex_to_dec(s):
+  return int(s, 16)
+
+#14
+
+def expression_matter(a, b, c):
+  return max(
+      a + b + c,
+      a * b * c,
+      a * (b + c),
+      (a + b) * c,
+      a + b * c,
+      a * b + c,
+  )
+
+#15
+
+def people_with_age_drink(age):
+  if age < 14:
+    return "drink toddy"
+  elif age < 18:
+    return "drink coke"
+  elif age < 21:
+    return "drink beer"
+  else:
+    return "drink whisky"
+
+#16
+
+def double_char(s):
+  return "".join(c * 2 for c in s)
+
+#17
+
+def distinct(seq):
+  return list(dict.fromkeys(seq))
+
+# в конце добавлю описания скриптов
